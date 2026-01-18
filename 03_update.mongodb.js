@@ -1,5 +1,7 @@
 use("ecommerce");
 
+// db.products.find({})
+
 // db.products.updateOne(
 //   { name: "Wireless Mouse" },
 //   { $set: { price: 899 } }
@@ -7,9 +9,11 @@ use("ecommerce");
 
 // db.products.updateMany(
 //   { category: "Electronics" },
-//   { $inc: { stock: 11 } })
+//   { $inc: { stock: 11 } }
+// )
 
-db.products.updateOne(
-  { name: "Wireless Mouse" },
-  { $push: { tags: "Mouse" } }
-)
+//To Push a tag in the tags array field
+// db.products.updateOne(
+//   { name: "Wireless Mouse" },
+//   { $push: { tags: "Mouse" } }
+// )
